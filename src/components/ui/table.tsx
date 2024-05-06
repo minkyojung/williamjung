@@ -9,7 +9,7 @@ const Table = React.forwardRef<
   <div className="relative w-full overflow-auto">
     <table
       ref={ref}
-      className={cn("w-full min-w-[950px] caption-bottom text-sm", className)}
+      className={cn("w-full min-w-[800px] caption-bottom text-sm", className)}
       {...props}
     />
   </div>
@@ -20,7 +20,7 @@ const TableHeader = React.forwardRef<
   HTMLTableSectionElement,
   React.HTMLAttributes<HTMLTableSectionElement>
 >(({ className, ...props }, ref) => (
-  <thead ref={ref} className={cn("[&_tr]:border-b", className)} {...props} />
+  <thead ref={ref} className={cn(className)} {...props} />
 ))
 TableHeader.displayName = "TableHeader"
 
@@ -43,7 +43,7 @@ const TableFooter = React.forwardRef<
   <tfoot
     ref={ref}
     className={cn(
-      "border-t bg-muted/50 font-medium [&>tr]:last:border-b-0",
+      "bg-muted/50 font-medium [&>tr]:last:border-b-0",
       className
     )}
     {...props}
@@ -58,12 +58,18 @@ const TableRow = React.forwardRef<
   <tr
     ref={ref}
     className={cn(
-      "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",
-      "bg-white h-16", // Set the height to 4rem (16)
+      "transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",
+      "bg-white h-16 border-b", // Added border-b here
       className
     )}
     {...props}
-  />
+  >
+    <TableCell className="w-3/5">
+      <div className="font-medium">Liam Johnson</div>
+    </TableCell>
+    <TableCell className="w-1/5 hidden sm:table-cell">Sale</TableCell>
+    <TableCell className="w-1/5 hidden md:table-cell">2023-06-23</TableCell>
+  </tr>
 ))
 TableRow.displayName = "TableRow"
 
@@ -75,7 +81,6 @@ const TableHead = React.forwardRef<
     ref={ref}
     className={cn(
       "h-10 px-2 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] my-4",
-      "w-3/5 ", // First column width set to 60%
       className
     )}
     {...props}
