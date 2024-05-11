@@ -31,7 +31,7 @@ const Navbar: FC = () => {
   return (
     <header className="flex items-center justify-between h-10 px-4 md:px-6 border bg-gradient-to-r from-[#121212] to-[#0D0D0D] w-[500px] mx-auto rounded-xl">
       <Link className="flex items-center gap-2" href="#">
-        <span className="text-sm font-semibold">William Jung</span>
+        <span className="text-sm font-medium">William Jung</span>
       </Link>
       <nav className="hidden md:flex items-center gap-6">
         <Link className="text-sm font-light text-zinc-400 hover:text-white transition-colors duration-300" href="#">
