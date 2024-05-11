@@ -1,10 +1,12 @@
 import ImgCard from "@/components/ui/imgcard";
 import BlogPostItem from "@/components/ui/blogpost"; // Import the BlogPostItem component
+import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center mt-6 w-full">
-      <div className="flex flex-row justify-center min-w-[1000px] my-4 flex-wrap scale-95 gap-4">
+      <Navbar />
+      <div className="flex flex-row justify-center min-w-[1000px] my-4 flex-wrap scale-90 gap-4">
       <ImgCard 
         src="/christmas.jpg"
         title="Merry Christmas" 

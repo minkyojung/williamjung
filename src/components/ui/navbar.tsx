@@ -27,26 +27,25 @@ const MountainIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
 };
 
 // 메인 컴포넌트의 정의 및 타입 안정성 추가
-const Component: FC = () => {
+const Navbar: FC = () => {
   return (
-    <header className="flex items-center justify-between h-16 px-4 md:px-6 border-b backdrop-blur-md bg-white/80 dark:bg-gray-950/80 w-[850px] mx-auto rounded-lg">
+    <header className="flex items-center justify-between h-10 px-4 md:px-6 border bg-gradient-to-r from-[#121212] to-[#0D0D0D] w-[500px] mx-auto rounded-xl">
       <Link className="flex items-center gap-2" href="#">
-        <MountainIcon className="w-6 h-6" />
-        <span className="text-lg font-semibold">Acme SaaS</span>
+        <span className="text-sm font-semibold">William Jung</span>
       </Link>
       <nav className="hidden md:flex items-center gap-6">
-        <Link className="text-sm font-medium hover:underline" href="#">
-          Dashboard
+        <Link className="text-sm font-light text-zinc-400 hover:text-white transition-colors duration-300" href="#">
+          Ehtos
         </Link>
-        <Link className="text-sm font-medium hover:underline" href="#">
-          Features
+        <Link className="text-sm font-light text-zinc-400 hover:text-white transition-colors duration-300" href="#">
+          Thoughts
         </Link>
-        <Link className="text-sm font-medium hover:underline" href="#">
-          Pricing
+        <Link className="text-sm font-light text-zinc-400 hover:text-white transition-colors duration-300" href="#">
+          Photos
         </Link>
       </nav>
     </header>
   );
 };
 
-export default Component;
+export default Navbar;
