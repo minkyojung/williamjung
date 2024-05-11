@@ -12,7 +12,7 @@ interface ImgCardProps {
 const ImgCard: React.FC<ImgCardProps> = ({ src, title, subtitle, className, url}) => {
   return (
     <a href={url} className="block"> {/* Wrap content with an anchor tag */}
-      <div className={`relative w-full max-w-xs rounded-lg overflow-hidden ${className} flex-auto border border-zinc-800 transition-transform duration-300 ease-in-out hover:scale-105`}>
+      <div className={`relative w-full max-w-xs rounded-lg overflow-hidden mx-px ${className} flex-auto border border-zinc-800 transition-transform duration-300 ease-in-out hover:scale-105`}>
         <img
           alt="Abstract art as background"
           className="w-full h-full object-cover aspect-[1/1.25]" 
