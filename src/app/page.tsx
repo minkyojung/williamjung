@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center mt-6 w-full">
       <Navbar />
-      <div className="flex flex-row justify-center min-w-[1000px] my-4 flex-wrap scale-90 gap-4">
+      <div className="flex flex-row justify-center min-w-[900px] my-4 flex-wrap scale-90 gap-2">
       <ImgCard 
         src="/christmas.jpg"
         title="Merry Christmas" 
