@@ -13,12 +13,12 @@ interface BlogPost {
 const BlogPostItem: React.FC<BlogPost> = ({ title, category, date, url}) => {
     const details = [
         { text: title, className: 'basis-4/5 text-sm font-normal' },
-        { text: category, className: 'basis-0.75/5 text-sm font-normal text-gray-400' },
-        { text: date, className: 'basis-0.25/5 text-sm font-normal text-gray-400' }
+        { text: category, className: 'basis-0.75/5 text-sm font-normal text-zinc-400' },
+        { text: date, className: 'basis-0.25/5 text-sm font-normal text-zinc-400' }
     ]; // Create an array of details with associated styles
     return (
-        <a href={url} className="block w-full flex py-5 border-b">
-            <div className='relative w-full rounded-lg flex-auto'>
+        <a href={url} className="block w-full flex py-6 px-6 border-b-[1.5px] border-zinc-900 transition-transform transition-background-color duration-300 ease-in-out hover:bg-zinc-900 hover:rounded-lg">
+            <div className='relative w-full flex-auto'>
                 <div className='flex justify-between items-center'>
                     {details.map((detail, index) => (
                         <p key={index} className={detail.className}>{detail.text}</p> // Apply styles to each paragraph
