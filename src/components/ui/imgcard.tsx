@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 // TypeScript with React Functional Component
 interface ImgCardProps {
