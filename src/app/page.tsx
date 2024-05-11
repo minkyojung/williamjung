@@ -1,7 +1,5 @@
-import Link from "next/link";
-
-
 import ImgCard from "@/components/ui/imgcard";
+import BlogPostItem from "@/components/ui/blogpost"; // Import the BlogPostItem component
 
 export default function Home() {
   return (
@@ -35,6 +33,56 @@ export default function Home() {
         className="flex-auto basis-1/4 mx-0.5"
         url="https://williamjung0130.substack.com/">
       </ImgCard>
+      </div>
+      <div className="w-full max-w-[850px] my-6">
+      <BlogPostItem 
+        title="Lorem ipsum dourmet consec consconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+        <BlogPostItem 
+        title="Lorem ipsconsconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+            <BlogPostItem 
+        title="Lorem ipsum dourmet consec consconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+        <BlogPostItem 
+        title="Lorem ipsconsconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+            <BlogPostItem 
+        title="Lorem ipsum dourmet consec consconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+        <BlogPostItem 
+        title="Lorem ipsconsconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+            <BlogPostItem 
+        title="Lorem ipsum dourmet consec consconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
+        <BlogPostItem 
+        title="Lorem ipsconsconslor sit urmet consec conscons" 
+        category="News" 
+        date="2023-01-01"
+        url="https://williamjung0130.substack.com/"
+      />
       </div>
     </main>
   );
