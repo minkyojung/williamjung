@@ -64,7 +64,7 @@ const TableRow = React.forwardRef<
     {...props}
   >
     <TableCell className="w-3/5">
-      <div className="font-medium">Liam Johnson</div>
+      <div className="font-medium">How to build my own blog with AI</div>
     </TableCell>
     <TableCell className="w-1/5 hidden sm:table-cell">Sale</TableCell>
     <TableCell className="w-1/5 hidden md:table-cell">2023-06-23</TableCell>

@@ -47,69 +47,7 @@ export default function Home() {
       </div>
       <Card className="mb-4 shadow-none border-zinc-950">
         <CardContent>
-          <Table className="w-full">
-            <TableHeader>
-              <TableRow>
-                <TableHead className="whitespace-nowrap"></TableHead>
-                <TableHead className="whitespace-nowrap hidden sm:table-cell"></TableHead>
-                <TableHead className="whitespace-nowrap hidden md:table-cell"></TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Liam Johnson</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">Sale</TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-23</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Olivia Smith</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">Refund</TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-24</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Noah Williams</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">
-                  Subscription
-                </TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-25</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Emma Brown</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">Sale</TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-26</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Liam Johnson</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">Sale</TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-23</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Olivia Smith</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">Refund</TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-24</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="w-3/5">
-                  <div className="font-medium">Emma Brown</div>
-                </TableCell>
-                <TableCell className="w-1/5 hidden sm:table-cell">Sale</TableCell>
-                <TableCell className="w-1/5 hidden md:table-cell">2023-06-26</TableCell>
-              </TableRow>
-            </TableBody>
-
-          </Table>
+          {/* Content here can be updated or left empty depending on your needs */}
         </CardContent>
       </Card>
     </main>
